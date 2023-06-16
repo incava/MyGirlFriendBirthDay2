@@ -12,14 +12,52 @@
         android:layout_height="match_parent"
         android:scaleType="fitXY" />
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/omuu"
+        android:lineSpacingExtra="8dp"
+        android:paddingStart="20dp"
+        android:paddingTop="100dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="60dp"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/omuu"
+        android:gravity="right"
+        android:paddingEnd="30dp"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/comment"
+        tools:layout_editor_absoluteX="-16dp" />
+
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_bgm"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:padding="4dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="@+id/background"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_bgm_birth"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:padding="4dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bgm"
+        app:layout_constraintStart_toEndOf="@+id/iv_bgm"
+        app:layout_constraintTop_toTopOf="@+id/iv_bgm" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
